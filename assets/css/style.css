@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(52, 80, 96);
+    align-items: center;
+    justify-content: center;
+}
+
+.tabuleiro{
+    display: flex;
+    background-color: lightgreen;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.381);
+
+}
+
+.fileiras{
+    display: flex;
+    background-color: rgba(173, 244, 173, 0.485);
+    height: 100px;
+    width: 300px;
+    align-self: center;
+    margin: 1px;
+}
+
+.field{
+    /*border-style: dashed;*/
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: sans-serif;
+    font-size: 4em;
+    color: grey;
+}
+
+.field:active{
+    background-color: rgba(190, 234, 190, 0.905);
+}
+
+#field1, #field4{
+    border-right: solid;
+    border-bottom: solid;
+    border-color: black;
+}
+#field3, #field6{
+    border-left: solid;
+    border-bottom: solid;
+    border-color: black;
+}
+#field2{
+    border-bottom: solid;
+    border-color: black;
+}
+#field5{
+    border-bottom: solid;
+    border-color: black;
+}
+#field7{
+    border-right: solid;
+    border-color: black;
+}
+#field9{
+    border-left: solid;
+    border-color: black;
+}
+
+.player{
+    background-color: blue;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.5em;
+    width: 36px;
+    padding: 1px;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-left: 13px;
+}
+.two{
+    background-color: red;
+}
